@@ -1,7 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   padding: 20px;
+}
+
+$border-color: #ddd;
+
+@mixin container {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid $border-color;
+  border-radius: 7px;
+  legend {
+    border: 1px solid $border-color;
+    padding: 0.4em;
+    border-radius: 8px;
+  }
+  input {
+    border: 1px solid $border-color;
+    display: block;
+    margin: 0.5em 0;
+  }
 }
 
 form {
@@ -11,4 +34,80 @@ form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 20px auto;
+}
+
+.personal-info {
+  @include container;
+  input {
+    width: 100%;
+    padding: 0.5em;
+  }
+}
+
+.preferences {
+  @include container;
+  .color-selector {
+    width: 100%;
+    height: 3em;
+    padding: 0.3em;
+    border-radius: 5px;
+  }
+}
+
+.contact-preferences {
+  @include container;
+
+  select {
+    display: block;
+    width: 100%;
+    padding: 0.3em;
+    margin: 0.5em 0;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+  }
+}
+
+.preferences2 {
+  @include container;
+
+  input {
+    display: inline;
+  }
+}
+
+.more-info {
+  @include container;
+  textarea {
+    margin-top: 1em;
+    display: block;
+    width: 100%;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+  }
+}
+
+.document-section {
+  @include container;
+
+  .document-block {
+    border: 1px solid $border-color;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  input {
+    border: none;
+  }
+}
+
+.submission-section {
+  @include container;
+  button {
+    width: 5em;
+    color: white;
+    background: #037bfe;
+    padding: 0.7em;
+    border-radius: 8px;
+    border: none;
+  }
 }

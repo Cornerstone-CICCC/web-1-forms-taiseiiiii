@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -11,6 +15,170 @@ form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 20px auto;
+}
+
+.personal-info {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+.personal-info legend {
+  border: 1px solid #ddd;
+  padding: 0.4em;
+  border-radius: 8px;
+}
+.personal-info input {
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0.5em 0;
+}
+.personal-info input {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.preferences {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+.preferences legend {
+  border: 1px solid #ddd;
+  padding: 0.4em;
+  border-radius: 8px;
+}
+.preferences input {
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0.5em 0;
+}
+.preferences .color-selector {
+  width: 100%;
+  height: 3em;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+
+.contact-preferences {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+.contact-preferences legend {
+  border: 1px solid #ddd;
+  padding: 0.4em;
+  border-radius: 8px;
+}
+.contact-preferences input {
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0.5em 0;
+}
+.contact-preferences select {
+  display: block;
+  width: 100%;
+  padding: 0.3em;
+  margin: 0.5em 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.preferences2 {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+.preferences2 legend {
+  border: 1px solid #ddd;
+  padding: 0.4em;
+  border-radius: 8px;
+}
+.preferences2 input {
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0.5em 0;
+}
+.preferences2 input {
+  display: inline;
+}
+
+.more-info {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+.more-info legend {
+  border: 1px solid #ddd;
+  padding: 0.4em;
+  border-radius: 8px;
+}
+.more-info input {
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0.5em 0;
+}
+.more-info textarea {
+  margin-top: 1em;
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.document-section {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+.document-section legend {
+  border: 1px solid #ddd;
+  padding: 0.4em;
+  border-radius: 8px;
+}
+.document-section input {
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0.5em 0;
+}
+.document-section .document-block {
+  border: 1px solid #ddd;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.document-section input {
+  border: none;
+}
+
+.submission-section {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+.submission-section legend {
+  border: 1px solid #ddd;
+  padding: 0.4em;
+  border-radius: 8px;
+}
+.submission-section input {
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0.5em 0;
+}
+.submission-section button {
+  width: 5em;
+  color: white;
+  background: #037bfe;
+  padding: 0.7em;
+  border-radius: 8px;
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
